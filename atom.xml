@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:32:16+09:00</updated>
+  <updated>2015-11-04T02:33:31+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -106,11 +106,11 @@ B:正定値対称行列</script>
 
 <p>上の条件を満たす${\bf H}_n^{-1}=B$の更新式はBFGS更新式と呼ばれており、以下式で表すことができる</p>
 
-<script type="math/tex; mode=display">B_{n+1} = (I-\rho_n y_n s_n^{\mathrm T})B_{n} +</script>
+<script type="math/tex; mode=display">B_{n+1} = (I-\rho_n y_n s_n^{\mathrm T})B_{n}(I-\rho_n s_n y_n^{\mathrm T}) + \rho_n s_n s_n^{\mathrm T}</script>
 
 <p>ただし</p>
 
-<script type="math/tex; mode=display">\rho=y_n s_n^{T}</script>
+<script type="math/tex; mode=display">\rho={y_n s_n^{\mathrm T}}^{-1}</script>
 ]]></content>
   </entry>
   
