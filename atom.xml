@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:12:28+09:00</updated>
+  <updated>2015-11-04T02:13:09+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -27,7 +27,7 @@
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。この関数を二次のTaylor展開で近似すると</p>
 
-<script type="math/tex; mode=display">f(x+\Delta x) \sim f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
+<script type="math/tex; mode=display">f(x+\Delta x) \approx f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
 
 <p>ここで<script type="math/tex">g_n=\nabla f(x_n)</script>は点<script type="math/tex">x</script>における勾配で、<script type="math/tex">H_n=\nabla^2 f(x_n)</script>は点<script type="math/tex">x</script>におけるヘッセ行列である。</p>
 
@@ -35,7 +35,7 @@
 
 <p>上の展開式を書き直すと、</p>
 
-<script type="math/tex; mode=display">h(\Delta x) \sim \Delta x^{\rm{T}} {\mathbf g_n} + \frac{1}{2} \Delta x^{\rm{T}} {\bf H}_\rm{n} \Delta x</script>
+<script type="math/tex; mode=display">h(\Delta x) \approx \Delta x^{\rm{T}} {\mathbf g_n} + \frac{1}{2} \Delta x^{\rm{T}} {\bf H}_\rm{n} \Delta x</script>
 
 <p>この式を最小化する<script type="math/tex">\Delta x</script>を求めたいので、両辺を<script type="math/tex">\Delta x</script>で微分すると</p>
 
