@@ -203,7 +203,7 @@ while no convergence
 
 <h5 id="section-1">セカント条件</h5>
 
-<p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n</script>の代わりとして、正定値対称行列<script type="math/tex">{\bf B}_{n}</script>で近似できたとする。すると、</p>
+<p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n^{-1}</script>が、正定値対称行列<script type="math/tex">{\bf B}_{n}</script>で近似できたとする。すると、</p>
 
 <script type="math/tex; mode=display">d = - B_n^{-1}g_n</script>
 
@@ -224,7 +224,7 @@ s_n = x_n - x_{n-1}</script>
 
 <p>とする。</p>
 
-<h5 id="bn">$B_n$をどのように更新するか？</h5>
+<h4 id="bn">$B_n$をどのように更新するか？</h4>
 
 <p>$B_n$を更新するとき、以下の２つの条件に従うとする</p>
 
@@ -235,9 +235,17 @@ s_n = x_n - x_{n-1}</script>
 
 <p>つまり、</p>
 
-<script type="math/tex; mode=display">B = \mathop{\rm arg~min}\limits_{B} \left \|  B - B_{n-1}\right \|\\
+<script type="math/tex; mode=display">B = \mathop{\rm arg~min}\limits_{B} \left \|  B - B_{n-1}\right \|^2\\
 s.t. ~ B_{n} s_n = y_n\\
 B:正定値対称行列</script>
+
+<p>上の条件を満たす${\bf H}_n^{-1}=B$の更新式はBFGS更新式と呼ばれており、以下式で表すことができる</p>
+
+<script type="math/tex; mode=display">B_{n+1} = (I-\rho_n y_n s_n^{\rm T})B_{n} +</script>
+
+<p>ただし</p>
+
+<script type="math/tex; mode=display">\rho = y_n s_n^{\rm T}^{-1}</script>
 </div>
   
   
