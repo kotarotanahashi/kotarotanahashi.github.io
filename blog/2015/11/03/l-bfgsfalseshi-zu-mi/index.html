@@ -136,6 +136,8 @@ MathJax.Hub.Config({
 <div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。どのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。</p>
+
+<script type="math/tex; mode=display">f(x+\Delta x)= f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
 </div>
 
 
