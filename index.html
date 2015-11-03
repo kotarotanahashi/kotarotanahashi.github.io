@@ -154,6 +154,14 @@ MathJax.Hub.Config({
 
 <script type="math/tex; mode=display">h(\Delta x) \sim \Delta x^{\rm{T}} {\mathbf g_n} + \frac{1}{2} \Delta x^{\rm{T}} {\bf H}_\rm{n} \Delta x</script>
 
+<p>この式を最小化する<script type="math/tex">\Delta x</script>を求めたいので、両辺を<script type="math/tex">\Delta x</script>で微分すると</p>
+
+<script type="math/tex; mode=display">\frac{\partial h_n(\Delta x)}{\partial \Delta x} = {\mathbf g_n} +  {\mathbf H_n} \Delta x</script>
+
+<p>上の式が0になるとき<script type="math/tex">h_n(\Delta x)</script>は最小値をとるので、その時の<script type="math/tex">\Delta x</script>を求めると、</p>
+
+<script type="math/tex; mode=display">\Delta x = -{\bf H}_n^{-1} {\bf g}_n</script>
+
 </div>
   
   
