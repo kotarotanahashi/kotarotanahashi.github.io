@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T00:41:53+09:00</updated>
+  <updated>2015-11-04T00:42:16+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 <!-- Note that the third line is indented by 4 whitespaces. -->
 <pre id="pseudocode-example">
-var $$N$$ = 6
+var $N$ = 6
 var j = 4
 for i = 1 to N
   % Different comment style before if statement:
