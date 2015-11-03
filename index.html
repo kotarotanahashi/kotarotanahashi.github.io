@@ -194,11 +194,11 @@ while no convergence
    $x_{n+1} \leftarrow x_n + \alpha^* d$
 </pre>
 
-<h3 id="newton">Newton法の問題点</h3>
+<h4 id="newton">Newton法の問題点</h4>
 
 <p>上の方法では<script type="math/tex">{\bf H}_n^{-1}</script>を計算する必要があるが、<script type="math/tex">x</script>の次元が$\sim 10^8$になった時にその行列の要素数は$\sim 10^16$になってしまい、値がメモリに載らなくなってしまう。</p>
 
-<h3 id="newton-1">準Newton法</h3>
+<h4 id="newton-1">準Newton法</h4>
 <p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGS法について説明する。</p>
 
 </div>
