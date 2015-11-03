@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:13:09+09:00</updated>
+  <updated>2015-11-04T02:18:45+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -79,7 +79,21 @@ while no convergence
 
 <p>なので、$B_{n}$も上の条件を満たすとすると、</p>
 
-<script type="math/tex; mode=display">B_{n} (x_n - x_{n-1}) = (g_n - g_{n-1})</script>
+<script type="math/tex; mode=display">B_{n} (x_n - x_{n-1}) = (g_n - g_{n-1})
+B_{n} s_n = y_n</script>
+
+<p>ここで、</p>
+
+<script type="math/tex; mode=display">y_n = g_n - g_{n-1}
+s_n = x_n - x_{n-1}</script>
+
+<p>とする。</p>
+
+<h5 id="bn">$B_n$の更新</h5>
+
+<p>$B_n$を更新するとき、２つの条件を考える。
+1. $B_n$は$B_{n-1}$に対してあまり変化しない。
+2. $B_{n} s_n = y_n$を満たす</p>
 ]]></content>
   </entry>
   
