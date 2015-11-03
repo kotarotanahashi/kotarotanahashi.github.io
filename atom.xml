@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:45:52+09:00</updated>
+  <updated>2015-11-04T02:47:33+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -14,10 +14,52 @@
 
   
   <entry>
+    <title type="html"><![CDATA[markdownの文法]]></title>
+    <link href="http://kotarotanahashi.github.io/blog/2015/11/03/newpost/"/>
+    <updated>2015-11-03T14:31:55+09:00</updated>
+    <id>http://kotarotanahashi.github.io/blog/2015/11/03/newpost</id>
+    <content type="html"><![CDATA[<pre><code class="language-javascript">function hello() {
+  alert("Javascript");
+}
+</code></pre>
+
+<ol>
+  <li>aaaa</li>
+  <li>bbbb</li>
+  <li>cccc</li>
+</ol>
+
+<ul>
+  <li>aaa</li>
+  <li>bbb</li>
+  <li>ccc</li>
+</ul>
+
+<script type="math/tex; mode=display">\int_0^{2\pi}\sin{x}\ dx=0</script>
+
+<p>aaa
+bbb</p>
+
+<p>$a=y^2$</p>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align} %]]&gt;</script>
+
+<p>$
+a=x^2
+$</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[3分でわかるL-BFGS]]></title>
-    <link href="http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi/"/>
-    <updated>2015-11-03T22:58:36+09:00</updated>
-    <id>http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi</id>
+    <link href="http://kotarotanahashi.github.io/blog/2015/10/03/l-bfgsfalseshi-zu-mi/"/>
+    <updated>2015-10-03T10:58:36+09:00</updated>
+    <id>http://kotarotanahashi.github.io/blog/2015/10/03/l-bfgsfalseshi-zu-mi</id>
     <content type="html"><![CDATA[<p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。
 この記事では、L-BFGSがどのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
@@ -125,48 +167,6 @@ B:正定値対称行列</script>
 <p>ただし</p>
 
 <script type="math/tex; mode=display">\rho={y_n s_n^{\mathrm T}}^{-1}</script>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[markdownの文法]]></title>
-    <link href="http://kotarotanahashi.github.io/blog/2015/11/03/newpost/"/>
-    <updated>2015-11-03T14:31:55+09:00</updated>
-    <id>http://kotarotanahashi.github.io/blog/2015/11/03/newpost</id>
-    <content type="html"><![CDATA[<pre><code class="language-javascript">function hello() {
-  alert("Javascript");
-}
-</code></pre>
-
-<ol>
-  <li>aaaa</li>
-  <li>bbbb</li>
-  <li>cccc</li>
-</ol>
-
-<ul>
-  <li>aaa</li>
-  <li>bbb</li>
-  <li>ccc</li>
-</ul>
-
-<script type="math/tex; mode=display">\int_0^{2\pi}\sin{x}\ dx=0</script>
-
-<p>aaa
-bbb</p>
-
-<p>$a=y^2$</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align} %]]&gt;</script>
-
-<p>$
-a=x^2
-$</p>
 ]]></content>
   </entry>
   
