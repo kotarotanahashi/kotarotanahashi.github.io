@@ -222,14 +222,20 @@ s_n = x_n - x_{n-1}</script>
 
 <p>とする。</p>
 
-<h5 id="bn">$B_n$の更新</h5>
+<h5 id="bn">$B_n$をどのように更新するか？</h5>
 
-<p>$B_n$を更新するとき、２つの条件を考える。</p>
+<p>$B_n$を更新するとき、以下の２つの条件に従うとする</p>
 
 <ol>
   <li>$B_n$は$B_{n-1}$に対してあまり変化しない。</li>
   <li>$B_{n} s_n = y_n$を満たす</li>
 </ol>
+
+<p>つまり、</p>
+
+<script type="math/tex; mode=display">B = \mathop{\rm arg~min}\limits_{B} \left \|  B - B_{n-1}\right \|\\
+s.t. ~ B_{n} s_n = y_n\\
+B:正定値対称行列</script>
 </div>
 
 
