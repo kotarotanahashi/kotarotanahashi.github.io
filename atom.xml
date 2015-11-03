@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-03T23:43:26+09:00</updated>
+  <updated>2015-11-03T23:53:52+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -22,6 +22,8 @@
 この記事では、L-BFGSがどのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
 <h3 id="section">ニュートン法</h3>
+
+<p><img alt="wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Newton_optimization_vs_grad_descent.svg/813px-Newton_optimization_vs_grad_descent.svg.png" width="200" /> (image-ref:wikipedia.org)</p>
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。この関数を二次のTaylor展開で近似すると</p>
 
