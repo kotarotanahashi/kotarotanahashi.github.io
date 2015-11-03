@@ -16,10 +16,22 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--- MathJax Configuration -->
-<script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://drz.ac/javascripts/MathJaxLocal.js">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
 </script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
 
   
   <link rel="canonical" href="http://kotarotanahashi.github.io/blog/archives">
@@ -111,7 +123,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <article>
   <div class="well">
 
-<h2><a href="/blog/2015/11/03/newpost/">newpost</a></h2>
+<h2><a href="/blog/2015/11/03/newpost/">markdownの文法</a></h2>
 <time datetime="2015-11-03T14:31:55+09:00" pubdate><span class='month'>Nov</span> <span class='day'>03</span> <span class='year'>2015</span></time>
 
 </div>
@@ -129,7 +141,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <li class="nav-header">Recent Posts</li>
     
       <li class="post">
-        <a href="/blog/2015/11/03/newpost/">newpost</a>
+        <a href="/blog/2015/11/03/newpost/">markdownの文法</a>
       </li>
     
   </ul>

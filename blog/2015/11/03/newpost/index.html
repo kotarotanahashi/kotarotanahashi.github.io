@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>newpost - Kotaro's blog</title>
+  <title>markdownの文法 - Kotaro's blog</title>
   <meta name="author" content="Kotaro Tanahashi">
 
   
@@ -16,10 +16,22 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--- MathJax Configuration -->
-<script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://drz.ac/javascripts/MathJaxLocal.js">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
 </script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
 
   
   <link rel="canonical" href="http://kotarotanahashi.github.io/blog/2015/11/03/newpost">
@@ -99,7 +111,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   
   <header class="page-header">
     
-      <h1 class="entry-title">Newpost</h1>
+      <h1 class="entry-title">Markdownの文法</h1>
     
     
       <p class="meta">
@@ -115,8 +127,28 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   </header>
 
 
-<div class="entry-content"><p>aaa
+<div class="entry-content"><pre><code class="language-javascript">function hello() {
+  alert("Javascript");
+}
+</code></pre>
+
+<script type="math/tex; mode=display">\int_0^{2\pi}\sin{x}\ dx=0</script>
+
+<p>aaa
 bbb</p>
+
+<p>$a=y^2$</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align} %]]></script>
+
+<p>$
+a=x^2
+$</p>
 </div>
 
 
@@ -163,7 +195,7 @@ bbb</p>
     <li class="nav-header">Recent Posts</li>
     
       <li class="post">
-        <a href="/blog/2015/11/03/newpost/">newpost</a>
+        <a href="/blog/2015/11/03/newpost/">markdownの文法</a>
       </li>
     
   </ul>
