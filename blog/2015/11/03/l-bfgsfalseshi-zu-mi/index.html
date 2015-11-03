@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>１から学ぶL-BFGS - Kotaro's blog</title>
+  <title>L-BFGSの仕組み - Kotaro's blog</title>
   <meta name="author" content="Kotaro Tanahashi">
 
   
@@ -135,7 +135,7 @@ $(document).ready(function() {
   
   <header class="page-header">
     
-      <h1 class="entry-title">１から学ぶL-BFGS</h1>
+      <h1 class="entry-title">L-BFGSの仕組み</h1>
     
     
       <p class="meta">
@@ -194,11 +194,14 @@ while no convergence
 
 <h4 id="newton">Newton法の問題点</h4>
 
-<p>上の方法では<script type="math/tex">{\bf H}_n^{-1}</script>を計算する必要があるが、<script type="math/tex">x</script>の次元が$\sim 10^8$になった時にその行列の要素数は$\sim 10^16$になってしまい、値がメモリに載らなくなってしまう。</p>
+<p>上の方法では${\bf H}_n^{-1}$を計算する必要があるが、<script type="math/tex">x</script>の次元が$\sim 10^8$になった時にその行列の要素数は$\sim 10^{16}$になってしまい、値がメモリに載らなくなってしまう。</p>
 
 <h4 id="newton-1">準Newton法</h4>
-<p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGS法について説明する。</p>
+<p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGSについて説明する。</p>
 
+<h4 id="section-1">セカント条件</h4>
+
+<p>ヘッセ行列の逆行列${\bf H}<em>n^{-1}$の代わりとして、${\bf B}</em>{n}$で近似できたとする。</p>
 </div>
 
 
@@ -249,7 +252,7 @@ while no convergence
     <li class="nav-header">Recent Posts</li>
     
       <li class="post">
-        <a href="/blog/2015/11/03/l-bfgsfalseshi-zu-mi/">１から学ぶL-BFGS</a>
+        <a href="/blog/2015/11/03/l-bfgsfalseshi-zu-mi/">L-BFGSの仕組み</a>
       </li>
     
       <li class="post">
