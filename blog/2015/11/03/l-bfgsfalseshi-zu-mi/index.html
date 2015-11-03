@@ -186,10 +186,9 @@ $(document).ready(function() {
 
 <pre>
 while no convergence
-   calc ${\bf H}_n^{-1}, {\bf g}_n$ 
-   %探索方向dを決定
-   d $\leftarrow -{\bf H}_n^{-1}, {\bf g}_n$ 
-   $\alpha^* = \mathop{\rm arg~min}\limits_\alpha f(x_n - \alpha d)$
+   ${\bf H}_n^{-1}, {\bf g}_n$を計算 
+   d $\leftarrow -{\bf H}_n^{-1}, {\bf g}_n$ %探索方向dを決定
+   $\alpha^* = \mathop{\rm arg~min}\limits_{\alpha} f(x_n - \alpha d)$
    $x_{n+1} \leftarrow x + \alpha^* d$
 </pre>
 
