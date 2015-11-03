@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T00:57:59+09:00</updated>
+  <updated>2015-11-04T00:58:31+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -51,12 +51,13 @@
 
 <p><strong>Newton’s method</strong></p>
 
-<pre><code class="language-python">while no convergence
+<pre>
+while no convergence
    calc ${\bf H}_n^{-1}, {\bf g}_n$ 
    %探索方向dを決定
    d $\leftarrow -\bf H}_n^{-1}, {\bf g}_n$ 
    
-</code></pre>
+</pre>
 
 ]]></content>
   </entry>
