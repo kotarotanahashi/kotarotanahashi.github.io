@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:36:24+09:00</updated>
+  <updated>2015-11-04T02:41:32+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -24,6 +24,9 @@
 <h3 id="section">ニュートン法</h3>
 
 <p><img alt="wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Newton_optimization_vs_grad_descent.svg/813px-Newton_optimization_vs_grad_descent.svg.png" width="200" /></p>
+
+<h4 id="section-1">最急降下法と何が違うのか？</h4>
+<p>上の図の赤い線はNewton法、緑の線は最急降下法の$x$の更新を表す。見てわかる通りNewton法のほうが初期値から最適解$x^{ * }$まで短い距離で到達している。最急降下法では１次の勾配のみを考慮するのに対してNewton法では2次の勾配まで考慮しているため、最急降下法に比べて大域的最適解に効率よく到達することができる。</p>
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。この関数を二次のTaylor展開で近似すると</p>
 
@@ -66,7 +69,7 @@ while no convergence
 <h3 id="newtonl-bfgs">準Newton法(L-BFGS)</h3>
 <p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGSについて説明する。</p>
 
-<h5 id="section-1">セカント条件</h5>
+<h5 id="section-2">セカント条件</h5>
 
 <p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n^{-1}</script>が、正定値対称行列<script type="math/tex">{\bf B}_{n}</script>で近似できたとする。すると、</p>
 
