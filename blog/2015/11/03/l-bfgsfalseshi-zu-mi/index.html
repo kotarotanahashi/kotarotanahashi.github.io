@@ -206,9 +206,13 @@ while no convergence
 <script type="math/tex; mode=display">d = - B_n^{-1}g_n</script>
 
 <p>は降下方向を向いていることが保証される。
-$g_n$のテイラー展開をすると</p>
+ここで、$g_n$の1次のテイラー展開を考えると</p>
 
-<script type="math/tex; mode=display">\frac{g_{n+1}-g_n}{x_{n+1}-x_n} \approx {\bf H}_n</script>
+<script type="math/tex; mode=display">\frac{\Delta g_{n+1}- \Delta g_n}{x_{n+1}-x_n} \approx {\bf H}_n</script>
+
+<p>なので、$B_{n}$も上の条件を満たすとすると、</p>
+
+<script type="math/tex; mode=display">B_{n} (x_n - x_{n-1}) = (g_n - g_{n-1})</script>
 </div>
 
 
