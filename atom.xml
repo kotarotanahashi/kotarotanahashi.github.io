@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T00:48:21+09:00</updated>
+  <updated>2015-11-04T00:49:57+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -45,7 +45,7 @@
 
 <script type="math/tex; mode=display">\Delta x = -{\bf H}_n^{-1} {\bf g}_n</script>
 
-<pre id="pseudocode-example">
+<pre id="example-seeds">
 var $N$ = 6
 var j = 4
 for i = 1 to N
