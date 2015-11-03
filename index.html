@@ -135,11 +135,20 @@ MathJax.Hub.Config({
   </header>
 
 
-  <div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。どのような手続きによって最適解を得ているのか簡単にまとめる。</p>
+  <div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。
+この記事では、L-BFGSがどのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
-<p>最適化したい関数を<script type="math/tex">f(x)</script>とする。</p>
+<h3 id="section">ニュートン法</h3>
 
-<script type="math/tex; mode=display">f(x+\Delta x) \sim f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
+<p>最適化したい関数を<script type="math/tex">f(x)</script>とする。この関数を二次のTaylor展開で近似すると
+<script type="math/tex">f(x+\Delta x) \sim f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
+ここで<script type="math/tex">g_n=\nabla f(x_n)</script>は点<script type="math/tex">x</script>における勾配で、<script type="math/tex">H_n=\nabla^2 f(x_n)</script>は点<script type="math/tex">x</script>におけるヘッセ行列である。</p>
+
+<p>点<script type="math/tex">x_n</script>の次の点を<script type="math/tex">x_{n+1}=x_n + \Delta x</script>として最適な解を逐次的に求めるとする。</p>
+
+<p>上の展開式を書き直すと、
+<script type="math/tex">h(\Delta x) \sim \Delta x^{\rm{T}} {\mathbf g_n} + \frac{1}{2} \Delta x^{\rm{T}} {\bf H}_\rm{n} \Delta x</script></p>
+
 </div>
   
   
