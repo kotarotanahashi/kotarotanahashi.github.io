@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:00:42+09:00</updated>
+  <updated>2015-11-04T02:00:59+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -59,16 +59,20 @@ while no convergence
    $x_{n+1} \leftarrow x_n + \alpha^* d$
 </pre>
 
-<h4 id="newton">Newton法の問題点</h4>
+<h5 id="newton">Newton法の問題点</h5>
 
 <p>上の方法では${\bf H}_n^{-1}$を計算する必要があるが、<script type="math/tex">x</script>の次元が$\sim 10^8$になった時にその行列の要素数は$\sim 10^{16}$になってしまい、値がメモリに載らなくなってしまう。</p>
 
 <h4 id="newton-1">準Newton法</h4>
 <p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGSについて説明する。</p>
 
-<h4 id="section-1">セカント条件</h4>
+<h5 id="section-1">セカント条件</h5>
 
-<p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n^{-1}</script>の代わりとして、${\bf B}_{n}$で近似できたとする。</p>
+<p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n</script>の代わりとして、正定値行列<script type="math/tex">{\bf B}_{n}</script>で近似できたとする。すると、</p>
+
+<script type="math/tex; mode=display">d = - B_n^{-1}g_n</script>
+
+<p>は降下方向を向いていることが保証される。</p>
 ]]></content>
   </entry>
   
