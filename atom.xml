@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-03T22:47:45+09:00</updated>
+  <updated>2015-11-03T22:49:22+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -22,6 +22,18 @@
   alert("Javascript");
 }
 </code></pre>
+
+<ol>
+  <li>aaaa</li>
+  <li>bbbb</li>
+  <li>cccc</li>
+</ol>
+
+<ul>
+  <li>aaa</li>
+  <li>bbb</li>
+  <li>ccc</li>
+</ul>
 
 <script type="math/tex; mode=display">\int_0^{2\pi}\sin{x}\ dx=0</script>
 
