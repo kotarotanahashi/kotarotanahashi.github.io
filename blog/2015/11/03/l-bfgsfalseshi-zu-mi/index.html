@@ -178,14 +178,18 @@ $(document).ready(function() {
 
 <script type="math/tex; mode=display">\Delta x = -{\bf H}_n^{-1} {\bf g}_n</script>
 
-<pre id="example-seeds">
-var $N$ = 6
-var j = 4
-for i = 1 to N
-  % Different comment style before if statement:
-  if i = j
-    N = N + 1
-</pre>
+<p>ここで求めた<script type="math/tex">\Delta x</script>を探索方向とする。</p>
+
+<p>アルゴリズムをまとめると以下のようになる</p>
+
+<p><strong>Newton’s method</strong></p>
+
+<pre><code class="language-python">while no convergence
+   calc ${\bf H}_n^{-1}, {\bf g}_n$ 
+   %探索方向dを決定
+   d $\leftarrow -\bf H}_n^{-1}, {\bf g}_n$ 
+   
+</code></pre>
 
 </div>
 
