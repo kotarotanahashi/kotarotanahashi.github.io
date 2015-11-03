@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-03T22:49:22+09:00</updated>
+  <updated>2015-11-03T23:17:40+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[L-BFGSの仕組み]]></title>
+    <link href="http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi/"/>
+    <updated>2015-11-03T22:58:36+09:00</updated>
+    <id>http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi</id>
+    <content type="html"><![CDATA[<p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。どのような手続きによって最適解を得ているのか簡単にまとめる。</p>
+
+<p>最適化したい関数を<script type="math/tex">f(x)</script>とする。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[markdownの文法]]></title>

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Kotaro's blog</title>
+  <title>L-BFGSの仕組み - Kotaro's blog</title>
   <meta name="author" content="Kotaro Tanahashi">
 
   
@@ -40,7 +40,7 @@ MathJax.Hub.Config({
 
 
   
-  <link rel="canonical" href="http://kotarotanahashi.github.io">
+  <link rel="canonical" href="http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -111,15 +111,13 @@ MathJax.Hub.Config({
 </nav>
   <div class="container">
     <div class="row-fluid">
-      <div class="span9">
-  
-  
-  
-    <article>
       
+<article class="hentry span9" role="article">
+
+  
   <header class="page-header">
     
-      <h1 class="entry-title"><a href="/blog/2015/11/03/l-bfgsfalseshi-zu-mi/">L-BFGSの仕組み</a></h1>
+      <h1 class="entry-title">L-BFGSの仕組み</h1>
     
     
       <p class="meta">
@@ -135,84 +133,52 @@ MathJax.Hub.Config({
   </header>
 
 
-  <div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。どのような手続きによって最適解を得ているのか簡単にまとめる。</p>
+<div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。どのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header class="page-header">
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kotaro Tanahashi</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-11-03T22:58:36+09:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>10:58 pm</span></time>
+      
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2015/11/03/newpost/">Markdownの文法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-11-03T14:31:55+09:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>2:31 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><pre><code class="language-javascript">function hello() {
-  alert("Javascript");
-}
-</code></pre>
-
-<ol>
-  <li>aaaa</li>
-  <li>bbbb</li>
-  <li>cccc</li>
-</ol>
-
-<ul>
-  <li>aaa</li>
-  <li>bbb</li>
-  <li>ccc</li>
-</ul>
-
-<script type="math/tex; mode=display">\int_0^{2\pi}\sin{x}\ dx=0</script>
-
-<p>aaa
-bbb</p>
-
-<p>$a=y^2$</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align} %]]></script>
-
-<p>$
-a=x^2
-$</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi/" data-via="" data-counturl="http://kotarotanahashi.github.io/blog/2015/11/03/l-bfgsfalseshi-zu-mi/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    
+    <ul class="pager">
+      
+      <li class="previous"><a class="basic-alignment left"
+        href="/blog/2015/11/03/newpost/" title="Previous Post:
+        markdownの文法">&laquo; markdownの文法</a></li>
+      
+      <li><a href="/blog/archives">Blog Archives</a></li>
+      
+    </ul>
+  </footer>
+</article>
 
-    </article>
-  
-  <ul class="pager">
-    
-    <li><a href="/blog/archives">Blog Archives</a></li>
-    
-  </ul>
-</div>
 <aside class="sidebar-nav span3">
   
     <section class="well">
@@ -236,6 +202,7 @@ $</p>
 
   
 </aside>
+
 
     </div>
   </div>
