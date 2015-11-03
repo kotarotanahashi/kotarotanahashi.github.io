@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-03T23:24:14+09:00</updated>
+  <updated>2015-11-03T23:24:44+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -22,7 +22,7 @@
 
 <p>最適化したい関数を<script type="math/tex">f(x)</script>とする。</p>
 
-<script type="math/tex; mode=display">f(x+\Delta x)~ f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
+<script type="math/tex; mode=display">f(x+\Delta x) \sim f(x) + \Delta x^{\rm{T}} \nabla f(x) + \frac{1}{2} \Delta x^{\rm{T}} (\nabla^2 f(x)) \Delta x</script>
 ]]></content>
   </entry>
   
