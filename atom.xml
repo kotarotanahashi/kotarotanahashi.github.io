@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:44:54+09:00</updated>
+  <updated>2015-11-04T02:45:28+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -31,7 +31,7 @@
 <h4 id="section-2">ニュートン法の仕組み</h4>
 
 <ul>
-  <li>点<script type="math/tex">x_n</script>の次の点を<script type="math/tex">x_{n+1}=x_n + \Delta x</script>として最適な解を逐次的に求めるとする。</li>
+  <li>点<script type="math/tex">x_n</script>の次の点を<script type="math/tex">x_{n+1}=x_n + \Delta x</script>として最適な解を逐次的に求める。</li>
   <li><script type="math/tex">x_{n+1}</script>は以下のように決める
     <ol>
       <li>勾配方向$d$を決定</li>
