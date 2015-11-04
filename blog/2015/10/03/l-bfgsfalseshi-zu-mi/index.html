@@ -154,14 +154,15 @@ $(document).ready(function() {
 <div class="entry-content"><p>L-BFGSは凸最適化問題を効率よく解くことができ、scikit-learnやsparkの線形モデル(logistic回帰など)のパラメータ推定など、広く用いられている。
 この記事では、L-BFGSがどのような手続きによって最適解を得ているのか簡単にまとめる。</p>
 
-<h3 id="section">ニュートン法</h3>
+<h3 id="newton">Newton法</h3>
+<p>L-BFGSなどは準Newton法と呼ばれており、Newton法を元に作られている。まずはNewton法について説明する。</p>
 
 <p><img alt="wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Newton_optimization_vs_grad_descent.svg/813px-Newton_optimization_vs_grad_descent.svg.png" width="200" /></p>
 
-<h4 id="section-1">最急降下法と何が違うのか？</h4>
+<h4 id="section">最急降下法と何が違うのか？</h4>
 <p>上の図の赤い線はNewton法、緑の線は最急降下法の$x$の更新を表す。見てわかる通りNewton法のほうが初期値から最適解$x^{ * }$まで短い距離で到達している。最急降下法では１次の勾配のみを考慮するのに対してNewton法では2次の勾配まで考慮しているため、最急降下法に比べて大域的最適解に効率よく到達することができる。</p>
 
-<h4 id="section-2">ニュートン法の仕組み</h4>
+<h4 id="section-1">ニュートン法の仕組み</h4>
 
 <ul>
   <li>点<script type="math/tex">x_n</script>の次の点を<script type="math/tex">x_{n+1}=x_n + \Delta x</script>として最適な解を逐次的に求める。</li>
@@ -206,14 +207,14 @@ while no convergence
    $x_{n+1} \leftarrow x_n + \alpha^* d$
 </pre>
 
-<h5 id="newton">Newton法の問題点</h5>
+<h5 id="newton-1">Newton法の問題点</h5>
 
 <p>上の方法では${\bf H}_n^{-1}$を計算する必要があるが、<script type="math/tex">x</script>の次元が$\sim 10^8$になった時にその行列の要素数は$\sim 10^{16}$になってしまい、値がメモリに載らなくなってしまう。</p>
 
 <h3 id="newtonl-bfgs">準Newton法(L-BFGS)</h3>
 <p>準Newton法とはNewton法におけるヘッセ行列を別の方法で置き換えた方法のこと。準Newton法は様々な種類があるが、ここではL-BFGSについて説明する。</p>
 
-<h5 id="section-3">セカント条件</h5>
+<h5 id="section-2">セカント条件</h5>
 
 <p>ヘッセ行列の逆行列<script type="math/tex">{\bf H}_n^{-1}</script>が、正定値対称行列<script type="math/tex">{\bf B}_{n}</script>で近似できたとする。すると、</p>
 
