@@ -4,7 +4,7 @@
   <title><![CDATA[Kotaro's blog]]></title>
   <link href="http://kotarotanahashi.github.io/atom.xml" rel="self"/>
   <link href="http://kotarotanahashi.github.io/"/>
-  <updated>2015-11-04T02:47:33+09:00</updated>
+  <updated>2015-11-04T09:29:15+09:00</updated>
   <id>http://kotarotanahashi.github.io/</id>
   <author>
     <name><![CDATA[Kotaro Tanahashi]]></name>
@@ -110,8 +110,8 @@ $</p>
 <pre>
 while no convergence
    ${\bf H}_n^{-1}, {\bf g}_n$を計算
-   d $\leftarrow -{\bf H}_n^{-1}, {\bf g}_n$ %探索方向dを決定
-   $\alpha^* = \mathop{\rm arg~min}\limits_{\alpha} f(x_n - \alpha d)$
+   d $\leftarrow -{\bf H}_n^{-1} {\bf g}_n$ %探索方向dを決定
+   $\alpha^* = \mathop{\rm arg~min}\limits_{\alpha} f(x_n - \alpha d)$ % line searchでステップ幅を決定
    $x_{n+1} \leftarrow x_n + \alpha^* d$
 </pre>
 

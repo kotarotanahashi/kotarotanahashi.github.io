@@ -265,8 +265,8 @@ $</p>
 <pre>
 while no convergence
    ${\bf H}_n^{-1}, {\bf g}_n$を計算
-   d $\leftarrow -{\bf H}_n^{-1}, {\bf g}_n$ %探索方向dを決定
-   $\alpha^* = \mathop{\rm arg~min}\limits_{\alpha} f(x_n - \alpha d)$
+   d $\leftarrow -{\bf H}_n^{-1} {\bf g}_n$ %探索方向dを決定
+   $\alpha^* = \mathop{\rm arg~min}\limits_{\alpha} f(x_n - \alpha d)$ % line searchでステップ幅を決定
    $x_{n+1} \leftarrow x_n + \alpha^* d$
 </pre>
 
